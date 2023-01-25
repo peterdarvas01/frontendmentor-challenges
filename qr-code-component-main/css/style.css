@@ -18,14 +18,14 @@ body {
   font-size: 15px;
   font-weight: 400;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.25;
 }
 
-article {
+main {
   background-color: var(--white);
   width: 318px;
   height: 497px;
@@ -38,16 +38,16 @@ article {
   flex-direction: column;
 }
 
-article img {
+main img {
   width: 100%;
   border-radius: 10px;
 }
 
-article p {
+main p {
   margin: 0px 16px 30px 16px;
 }
 
-article p:nth-child(2) {
+main p:nth-child(2) {
   margin: 24px 16px 16px 16px;
   color: var(--darkblue);
   font-size: 22px;
