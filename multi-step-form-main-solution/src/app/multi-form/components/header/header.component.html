@@ -1,10 +1,10 @@
-<header class="mform__header">
-  <nav>
+<header *ngIf="currentPage$ | async as currentPage" class="mform__header">
+  <aside>
     <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
+      <li [ngClass]="{ 'li--active': currentPage === 1 }">1</li>
+      <li [ngClass]="{ 'li--active': currentPage === 2 }">2</li>
+      <li [ngClass]="{ 'li--active': currentPage === 3 }">3</li>
+      <li [ngClass]="{ 'li--active': currentPage === 4 }">4</li>
     </ul>
-  </nav>
+  </aside>
 </header>
