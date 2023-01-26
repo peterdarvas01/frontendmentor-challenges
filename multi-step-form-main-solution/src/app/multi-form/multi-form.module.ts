@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { MultiFormComponent } from './components/multi-form/multi-form.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store/reducers';
@@ -24,6 +26,10 @@ import { FormStep5Component } from './components/form-step5/form-step5.component
     FormStep4Component,
     FormStep5Component,
   ],
-  imports: [CommonModule, StoreModule.forFeature('multiForm', reducers)],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    StoreModule.forFeature('multiForm', reducers),
+  ],
 })
 export class MultiFormModule {}

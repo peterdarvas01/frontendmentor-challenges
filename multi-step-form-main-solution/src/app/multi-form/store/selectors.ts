@@ -7,3 +7,8 @@ export const currentPageSelector = createSelector(
   selectFeature,
   (state) => state.currentPage
 );
+
+export const subscriptionSelector = createSelector(
+  selectFeature,
+  (state) => state.subscription
+);
