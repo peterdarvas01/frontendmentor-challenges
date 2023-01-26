@@ -1,0 +1,32 @@
+.mform__footer {
+  height: 4.4rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  margin: 0em 1em;
+  padding: 0.75em 1.25em;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__primary {
+  color: var(--magnolia);
+  background-color: var(--marine-blue);
+}
+
+.btn__secondary {
+  color: var(--cool-gray);
+  background-color: var(--white);
+  border: none;
+}
+
+.btn__important {
+  color: var(--magnolia);
+  background-color: var(--purplish-blue);
+}

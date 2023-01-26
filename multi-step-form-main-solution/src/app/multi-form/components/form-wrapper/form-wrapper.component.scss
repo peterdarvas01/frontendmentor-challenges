@@ -1,0 +1,12 @@
+.mform__main {
+  box-sizing: border-box;
+  position: absolute;
+  width: calc(100% - 2rem);
+  top: 5.2rem;
+  margin: 1rem;
+  background-color: var(--white);
+  border-radius: 0.6rem;
+
+  /* Placeholder height */
+  height: 375px;
+}

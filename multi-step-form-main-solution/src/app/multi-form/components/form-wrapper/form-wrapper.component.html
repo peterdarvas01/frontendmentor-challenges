@@ -1,0 +1,17 @@
+<main class="mform__main">
+  <ng-container *ngIf="(currentPage$ | async) === 1">
+    <app-form-step1></app-form-step1>
+  </ng-container>
+  <ng-container *ngIf="(currentPage$ | async) === 2">
+    <app-form-step2></app-form-step2>
+  </ng-container>
+  <ng-container *ngIf="(currentPage$ | async) === 3">
+    <app-form-step3></app-form-step3>
+  </ng-container>
+  <ng-container *ngIf="(currentPage$ | async) === 4">
+    <app-form-step4></app-form-step4>
+  </ng-container>
+  <ng-container *ngIf="(currentPage$ | async) === 5">
+    <app-form-step5></app-form-step5>
+  </ng-container>
+</main>

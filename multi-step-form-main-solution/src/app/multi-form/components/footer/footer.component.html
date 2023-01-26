@@ -1,0 +1,25 @@
+<ng-container *ngIf="currentPage$ | async as currentPage">
+  <footer *ngIf="currentPage !== 5" class="mform__footer">
+    <button
+      *ngIf="currentPage &lt; 4"
+      class="btn btn__primary"
+      (click)="nextPage()"
+    >
+      Next Step
+    </button>
+    <button
+      *ngIf="currentPage === 4"
+      class="btn btn__important"
+      (click)="confirm()"
+    >
+      Confirm
+    </button>
+    <button
+      *ngIf="currentPage &gt; 1"
+      class="btn btn__secondary"
+      (click)="prevPage()"
+    >
+      Go Back
+    </button>
+  </footer>
+</ng-container>
