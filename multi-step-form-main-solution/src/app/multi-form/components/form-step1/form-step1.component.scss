@@ -18,10 +18,20 @@ p {
   display: flex;
   flex-direction: column;
 
-  label {
+  .label {
+    display: flex;
+    justify-content: space-between;
     margin-top: 1em;
-    color: var(--marine-blue);
     font-size: 0.8em;
+
+    label {
+      color: var(--marine-blue);
+    }
+
+    .error {
+      font-weight: 700;
+      color: #cf4e62;
+    }
   }
 
   input {
@@ -29,5 +39,25 @@ p {
     border: 1px var(--light-gray) solid;
     border-radius: 0.25em;
     cursor: pointer;
+    font-weight: 500;
+    color: var(--marine-blue);
+    background-color: var(--white) !important;
+
+    &:focus {
+      /* This color is not in the style guide */
+      border: 1px #544c95 solid;
+      outline: none;
+    }
+
+    &.ng-touched.ng-invalid {
+      /* This color is not in the style guide */
+      border: 1px solid #cf4e62;
+    }
+
+    /* Avoid recoloring of autofilled fields */
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
   }
 }

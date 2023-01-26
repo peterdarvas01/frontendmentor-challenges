@@ -15,6 +15,16 @@
   cursor: pointer;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  filter: brightness(150%);
+}
+
 .btn__primary {
   color: var(--magnolia);
   background-color: var(--marine-blue);

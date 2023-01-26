@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { select, Store } from '@ngrx/store';
 import { AppStateInterface } from 'src/app/types/appState.interface';
 import { subscriptionSelector } from '../../store/selectors';
@@ -12,9 +12,9 @@ import * as MultiFormActions from '../../store/actions';
 })
 export class FormStep1Component implements OnInit {
   subscriptionForm = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    phone: new FormControl('', Validators.required),
   });
 
   constructor(private store: Store<AppStateInterface>) {}

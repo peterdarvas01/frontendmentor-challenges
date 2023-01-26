@@ -4,6 +4,7 @@
       *ngIf="currentPage &lt; 4"
       class="btn btn__primary"
       (click)="nextPage()"
+      [disabled]="!valid"
     >
       Next Step
     </button>

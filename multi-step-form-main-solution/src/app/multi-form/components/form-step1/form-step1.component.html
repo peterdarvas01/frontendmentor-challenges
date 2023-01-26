@@ -2,28 +2,64 @@
   <h1>Personal info</h1>
   <p>Please provide your name, email address, and phone number.</p>
   <form [formGroup]="subscriptionForm" class="formGroup">
-    <label for="name">Name</label>
+    <div class="label">
+      <label for="name">Name</label>
+      <span
+        class="error"
+        *ngIf="
+          subscriptionForm.get('name')?.touched &&
+          subscriptionForm.get('name')?.hasError('required')
+        "
+      >
+        This field is required
+      </span>
+    </div>
     <input
       id="name"
       type="text"
       formControlName="name"
-      (blur)="updateStore()"
+      placeholder="e.g. Stephen King"
+      (keyup)="updateStore()"
     />
 
-    <label for="name">Email Address</label>
+    <div class="label">
+      <label for="email">Email Address</label>
+      <span
+        class="error"
+        *ngIf="
+          subscriptionForm.get('email')?.touched &&
+          subscriptionForm.get('email')?.hasError('required')
+        "
+      >
+        This field is required
+      </span>
+    </div>
     <input
-      id="name"
+      id="email"
       type="text"
       formControlName="email"
-      (blur)="updateStore()"
+      placeholder="e.g. stephenking@lorem.com"
+      (keyup)="updateStore()"
     />
 
-    <label for="name">Phone Number</label>
+    <div class="label">
+      <label for="phone">Phone Number</label>
+      <span
+        class="error"
+        *ngIf="
+          subscriptionForm.get('phone')?.touched &&
+          subscriptionForm.get('phone')?.hasError('required')
+        "
+      >
+        This field is required
+      </span>
+    </div>
     <input
-      id="name"
+      id="phone"
       type="text"
       formControlName="phone"
-      (blur)="updateStore()"
+      placeholder="e.g. +1 234 567 890"
+      (keyup)="updateStore()"
     />
   </form>
 </section>
