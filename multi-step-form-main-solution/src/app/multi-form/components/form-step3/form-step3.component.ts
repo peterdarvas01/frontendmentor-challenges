@@ -12,9 +12,12 @@ import { PaymentPeriodEnum, PlanEnum } from '../../types/enums';
   styleUrls: ['./form-step3.component.scss'],
 })
 export class FormStep3Component implements OnInit {
+  PaymentPeriodEnum = PaymentPeriodEnum;
+
   addonOnline: boolean = false;
   addonExtraStorage: boolean = false;
   addonCustomProfile: boolean = false;
+  paymentPeriod: PaymentPeriodEnum = PaymentPeriodEnum.MONTH;
 
   constructor(private store: Store<AppStateInterface>) {}
 
@@ -23,6 +26,7 @@ export class FormStep3Component implements OnInit {
       this.addonOnline = sub.addonOnline;
       this.addonExtraStorage = sub.addonExtraStorage;
       this.addonCustomProfile = sub.addonCustomProfile;
+      this.paymentPeriod = sub.paymentPeriod;
     });
     s.unsubscribe();
   }

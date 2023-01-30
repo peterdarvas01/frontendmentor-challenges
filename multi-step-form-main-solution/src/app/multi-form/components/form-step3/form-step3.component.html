@@ -11,7 +11,12 @@
     <span class="addon__checkmark"></span>
     <span class="addon__title">Online Service</span>
     <span class="addon__description">Access to multiplayer games</span>
-    <span class="addon__cost">+$1/mo</span>
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >+$1/mo</span
+    >
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >+$10/yr</span
+    >
   </label>
 
   <label [ngClass]="{ addon: true, 'addon--active': addonExtraStorage }">
@@ -23,7 +28,12 @@
     <span class="addon__checkmark"></span>
     <span class="addon__title">Larger storage</span>
     <span class="addon__description">Extra 1TB of cloud save</span>
-    <span class="addon__cost">+$2/mo</span>
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >+$2/mo</span
+    >
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >+$20/yr</span
+    >
   </label>
 
   <label [ngClass]="{ addon: true, 'addon--active': addonCustomProfile }">
@@ -35,6 +45,11 @@
     <span class="addon__checkmark"></span>
     <span class="addon__title">Customizable profile</span>
     <span class="addon__description">Custom theme on your profile</span>
-    <span class="addon__cost">+$2/mo</span>
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >+$2/mo</span
+    >
+    <span class="addon__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >+$20/yr</span
+    >
   </label>
 </section>
