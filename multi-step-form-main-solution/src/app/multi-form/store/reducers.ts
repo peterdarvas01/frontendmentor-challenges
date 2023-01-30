@@ -5,11 +5,11 @@ import { SubscriptionInterface } from '../types/subscription.interface';
 import * as MultiFormActions from './actions';
 
 export const initialState: MultiFormStateInterface = {
-  currentPage: 4,
+  currentPage: 1,
   subscription: {
-    name: 'John Doe',
-    email: 'jdoe@gmail.com',
-    phone: '+3618524763',
+    name: '',
+    email: '',
+    phone: '',
     baseCost: '$9/mo',
     totalCost: '$9/mo',
     plan: PlanEnum.ARCADE,

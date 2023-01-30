@@ -1,5 +1,5 @@
 <header *ngIf="currentPage$ | async as currentPage" class="mform__header">
-  <aside>
+  <aside *ngIf="currentPage &lt; 5">
     <ul>
       <li [ngClass]="{ 'li--active': currentPage === 1 }">1</li>
       <li [ngClass]="{ 'li--active': currentPage === 2 }">2</li>
