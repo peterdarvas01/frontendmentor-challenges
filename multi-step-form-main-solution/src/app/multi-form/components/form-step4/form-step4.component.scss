@@ -1,0 +1,75 @@
+section {
+  padding: 1.5em;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--marine-blue);
+}
+
+p {
+  color: var(--cool-gray);
+  margin: 0.3em 0;
+}
+
+.details {
+  background-color: var(--alabaster);
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 1.5em;
+  padding: 1em;
+
+  hr {
+    border-top: 1px var(--light-grey) solid;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: auto 4.5em;
+    grid-template-areas:
+      "title cost"
+      "description cost";
+    line-height: 1;
+
+    margin: 0.8em 0;
+
+    .row__title {
+      grid-area: title;
+      margin: 0 0 0.5em 0;
+      font-weight: 700;
+      color: var(--marine-blue);
+    }
+
+    .row__description {
+      grid-area: description;
+      color: var(--cool-gray);
+      font-size: 0.9em;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .row__cost {
+      display: inline-grid;
+      align-items: center;
+      grid-area: cost;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--marine-blue);
+    }
+  }
+
+  &.no-bg {
+    background-color: transparent;
+    margin-top: 0;
+
+    .row {
+      .row__cost {
+        color: var(--purplish-blue);
+      }
+    }
+  }
+}

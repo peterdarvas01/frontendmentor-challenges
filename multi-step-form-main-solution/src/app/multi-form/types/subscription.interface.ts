@@ -12,5 +12,6 @@ export interface SubscriptionInterface {
   addonExtraStorage: boolean;
   addonCustomProfile: boolean;
 
-  cost: number;
+  baseCost: string;
+  totalCost: string;
 }

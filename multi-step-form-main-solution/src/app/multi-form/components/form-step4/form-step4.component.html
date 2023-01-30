@@ -1,1 +1,62 @@
-<p>form-step4 works!</p>
+<section>
+  <h1>Finishing up</h1>
+  <p>Double-check everything looks OK before confirming.</p>
+
+  <ng-container *ngIf="subscription$ | async as subscription">
+    <div class="details">
+      <span class="row">
+        <span class="row__title"
+          >{{ subscription.plan }} ({{ subscription.paymentPeriod }})</span
+        >
+        <a class="row__description" (click)="changePlan()">Change</a>
+        <span class="row__cost">{{ subscription.baseCost }}</span>
+      </span>
+      <hr />
+      <span class="row" *ngIf="subscription.addonOnline">
+        <span class="row__description">Online service</span>
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.MONTH"
+          >+$1/mo</span
+        >
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.YEAR"
+          >+$10/yr</span
+        >
+      </span>
+      <span class="row" *ngIf="subscription.addonExtraStorage">
+        <span class="row__description">Larger storage</span>
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.MONTH"
+          >+$2/mo</span
+        >
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.YEAR"
+          >+$20/yr</span
+        >
+      </span>
+      <span class="row" *ngIf="subscription.addonCustomProfile">
+        <span class="row__description">Customizable profile</span>
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.MONTH"
+          >+$2/mo</span
+        >
+        <span
+          class="row__cost"
+          *ngIf="subscription.paymentPeriod === PaymentPeriodEnum.YEAR"
+          >+$20/yr</span
+        >
+      </span>
+    </div>
+    <div class="details no-bg">
+      <span class="row">
+        <span class="row__description">Total (per month)</span>
+        <span class="row__cost">{{ subscription.totalCost }}</span>
+      </span>
+    </div>
+  </ng-container>
+</section>
