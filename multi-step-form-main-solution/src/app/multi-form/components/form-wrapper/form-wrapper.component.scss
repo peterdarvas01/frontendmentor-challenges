@@ -6,4 +6,6 @@
   margin: 1rem;
   background-color: var(--white);
   border-radius: 0.6rem;
+  overflow: auto;
+  max-height: calc(100vh - 110px - 4.4rem);
 }
