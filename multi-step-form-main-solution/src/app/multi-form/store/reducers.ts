@@ -44,5 +44,14 @@ export const reducers = createReducer(
       plan: action.plan,
       paymentPeriod: action.paymentPeriod,
     },
+  })),
+  on(MultiFormActions.updateAddons, (state, action) => ({
+    ...state,
+    subscription: {
+      ...state.subscription,
+      addonOnline: action.addonOnline,
+      addonExtraStorage: action.addonExtraStorage,
+      addonCustomProfile: action.addonCustomProfile,
+    },
   }))
 );

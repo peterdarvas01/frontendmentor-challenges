@@ -28,6 +28,9 @@ p {
   line-height: 1;
   cursor: pointer;
 
+  &:hover {
+    border: 1px #544c95 solid;
+  }
   .plan__icon {
     grid-area: icon;
     margin: 0 1em;

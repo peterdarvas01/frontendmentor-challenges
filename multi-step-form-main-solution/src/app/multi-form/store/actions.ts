@@ -14,3 +14,12 @@ export const updatePaymentInfo = createAction(
   '[MultiForm] Update Payment Info',
   props<{ plan: PlanEnum; paymentPeriod: PaymentPeriodEnum }>()
 );
+
+export const updateAddons = createAction(
+  '[MultiForm] Update Add-ons Info',
+  props<{
+    addonOnline: boolean;
+    addonExtraStorage: boolean;
+    addonCustomProfile: boolean;
+  }>()
+);
