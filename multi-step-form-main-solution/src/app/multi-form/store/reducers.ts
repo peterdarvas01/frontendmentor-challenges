@@ -6,9 +6,9 @@ import * as MultiFormActions from './actions';
 export const initialState: MultiFormStateInterface = {
   currentPage: 1,
   subscription: {
-    name: '',
-    email: '',
-    phone: '',
+    name: 'John Doe',
+    email: 'jdoe@gmail.com',
+    phone: '+3618524763',
     cost: 9,
     plan: PlanEnum.ARCADE,
     paymentPeriod: PaymentPeriodEnum.MONTH,
@@ -35,6 +35,14 @@ export const reducers = createReducer(
       name: action.name,
       email: action.email,
       phone: action.phone,
+    },
+  })),
+  on(MultiFormActions.updatePaymentInfo, (state, action) => ({
+    ...state,
+    subscription: {
+      ...state.subscription,
+      plan: action.plan,
+      paymentPeriod: action.paymentPeriod,
     },
   }))
 );

@@ -1,1 +1,88 @@
-<p>form-step2 works!</p>
+<section>
+  <h1>Select your plan</h1>
+  <p>You have the option of monthly or yearly billing.</p>
+
+  <div
+    [ngClass]="{ plan: true, 'plan--active': plan === PlanEnum.ARCADE }"
+    (click)="togglePlan(PlanEnum.ARCADE)"
+  >
+    <span class="plan__icon">
+      <img alt="Arcade option icon." src="/assets/images/icon-arcade.svg" />
+    </span>
+    <span class="plan__title">Arcade</span>
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >$9/mo</span
+    >
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >$90/yr</span
+    >
+    <span
+      class="plan__discount"
+      *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >2 months free</span
+    >
+  </div>
+
+  <div
+    [ngClass]="{ plan: true, 'plan--active': plan === PlanEnum.ADVANCED }"
+    (click)="togglePlan(PlanEnum.ADVANCED)"
+  >
+    <span class="plan__icon">
+      <img alt="Arcade option icon." src="/assets/images/icon-advanced.svg" />
+    </span>
+    <span class="plan__title">Advanced</span>
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >$12/mo</span
+    >
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >$120/yr</span
+    >
+    <span
+      class="plan__discount"
+      *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >2 months free</span
+    >
+  </div>
+
+  <div
+    [ngClass]="{ plan: true, 'plan--active': plan === PlanEnum.PRO }"
+    (click)="togglePlan(PlanEnum.PRO)"
+  >
+    <span class="plan__icon">
+      <img alt="Arcade option icon." src="/assets/images/icon-pro.svg" />
+    </span>
+    <span class="plan__title">Pro</span>
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.MONTH"
+      >$15/mo</span
+    >
+    <span class="plan__cost" *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >$150/yr</span
+    >
+    <span
+      class="plan__discount"
+      *ngIf="paymentPeriod === PaymentPeriodEnum.YEAR"
+      >2 months free</span
+    >
+  </div>
+
+  <label class="period">
+    <span
+      [ngClass]="{
+        period__label: true,
+        'period__label--active': paymentPeriod === PaymentPeriodEnum.MONTH
+      }"
+      >Monthly</span
+    >
+    <div class="switch">
+      <input type="checkbox" (click)="togglePeriod()" />
+      <span class="slider round"></span>
+    </div>
+    <span
+      [ngClass]="{
+        period__label: true,
+        'period__label--active': paymentPeriod === PaymentPeriodEnum.YEAR
+      }"
+      >Yearly</span
+    >
+  </label>
+</section>
