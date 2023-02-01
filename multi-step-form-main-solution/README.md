@@ -1,27 +1,51 @@
-# MultiStepFormMainSolution
+# Frontend Mentor - Multi-step form solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Users should be able to:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Complete each step of the sequence
+- See a summary of their selections on the final step and confirm their order
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-## Running unit tests
+### Links
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Solution URL: [Add solution URL here](https://github.com/peterdarvas01/frontendmentor-challenges/tree/main/multi-step-form-main-solution)
+- Live Site URL: [Add live site URL here](https://dp-frontendmentor-multiform.netlify.app/)
 
-## Running end-to-end tests
+## My process
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Built with
 
-## Further help
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Angular](https://angular.io/) - Framework
+- [rxjs](https://rxjs.dev) - JS library
+- [ngrx](https://ngrx.io/) - State management
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### What I learned
+
+I wanted to try some ngrx state management, all ngrx stuff was new to me.
+
+## Author
+
+- Website - [Peter Darvas](https://www.linkedin.com/in/p%C3%A9ter-darvas-139a34252/)
+- Frontend Mentor - [@peterdarvas01](https://www.frontendmentor.io/profile/peterdarvas01)
