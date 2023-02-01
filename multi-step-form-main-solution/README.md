@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/peterdarvas01/frontendmentor-challenges/tree/main/multi-step-form-main-solution)
-- Live Site URL: [Add live site URL here](https://dp-frontendmentor-multiform.netlify.app/)
+- Solution URL: [github.com](https://github.com/peterdarvas01/frontendmentor-challenges/tree/main/multi-step-form-main-solution)
+- Live Site URL: [netlify.app](https://dp-frontendmentor-multiform.netlify.app/)
 
 ## My process
 
