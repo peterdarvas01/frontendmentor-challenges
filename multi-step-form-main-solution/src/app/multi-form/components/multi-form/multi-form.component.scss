@@ -20,8 +20,8 @@
     grid-template-areas:
       "header main"
       "header footer";
-    grid-template-columns: 316px auto;
-    grid-template-rows: auto 100px;
+    grid-template-columns: 316px 1fr;
+    grid-template-rows: 1fr 100px;
     justify-content: start;
   }
 
@@ -31,9 +31,11 @@
 
   app-footer {
     grid-area: footer;
+    margin: 0 3em 0 2em;
   }
 
   app-form-wrapper {
     grid-area: main;
+    margin: 0 3em 0 2em;
   }
 }

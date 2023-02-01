@@ -1,5 +1,4 @@
 section {
-  padding: 1.5em;
   line-height: 1.5;
 }
 
@@ -111,4 +110,15 @@ p {
   cursor: pointer;
   height: 0;
   width: 0;
+}
+
+@media only screen and (min-width: 376px) {
+  section {
+    font-size: 1.3em;
+  }
+
+  .addon {
+    margin: 1em 0;
+    padding: 1em 0;
+  }
 }

@@ -1,5 +1,4 @@
 section {
-  padding: 1.5em;
   line-height: 1.5;
   text-align: center;
 }
@@ -19,4 +18,15 @@ h1 {
 p {
   color: var(--cool-gray);
   margin: 0.3em 0 3em 0;
+}
+
+@media only screen and (min-width: 376px) {
+  section {
+    font-size: 1.4em;
+  }
+
+  img {
+    width: 5em;
+    margin-top: 6em;
+  }
 }

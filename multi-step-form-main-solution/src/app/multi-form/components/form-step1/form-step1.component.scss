@@ -1,5 +1,4 @@
 section {
-  padding: 1.5em;
   line-height: 1.5;
 }
 
@@ -58,6 +57,23 @@ p {
     &:-webkit-autofill,
     &:-webkit-autofill:focus {
       transition: background-color 600000s 0s, color 600000s 0s;
+    }
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  section {
+    font-size: 1.3em;
+  }
+
+  .formGroup {
+    margin-top: 1em;
+    .label {
+      margin-top: 1.7em;
+    }
+    input {
+      padding: 0.9em 0.8em;
+      border-radius: 0.5em;
     }
   }
 }

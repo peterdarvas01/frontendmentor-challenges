@@ -1,5 +1,4 @@
 section {
-  padding: 1.5em;
   line-height: 1.5;
 }
 
@@ -50,6 +49,7 @@ p {
 
     a {
       text-decoration: underline;
+      cursor: pointer;
     }
 
     .row__cost {
@@ -71,5 +71,11 @@ p {
         color: var(--purplish-blue);
       }
     }
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  section {
+    font-size: 1.3em;
   }
 }

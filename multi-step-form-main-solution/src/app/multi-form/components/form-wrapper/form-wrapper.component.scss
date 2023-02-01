@@ -8,13 +8,15 @@
   border-radius: 0.6rem;
   overflow: auto;
   max-height: calc(100vh - 110px - 4.4rem);
+  padding: 1.5em;
 }
 
 @media only screen and (min-width: 376px) {
   .mform__main {
     position: unset;
     top: unset;
-    width: 100%;
+    width: unset;
     max-height: unset;
+    padding-top: 2.2em;
   }
 }

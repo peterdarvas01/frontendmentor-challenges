@@ -8,6 +8,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em;
 }
 
 .btn {
@@ -51,6 +52,10 @@
 }
 
 @media only screen and (min-width: 376px) {
+  .btn {
+    border-radius: 0.5em;
+  }
+
   .mform__footer {
     position: unset;
     bottom: unset;
