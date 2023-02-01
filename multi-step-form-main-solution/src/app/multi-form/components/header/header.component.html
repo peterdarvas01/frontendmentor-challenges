@@ -1,10 +1,22 @@
 <header *ngIf="currentPage$ | async as currentPage" class="mform__header">
   <aside *ngIf="currentPage &lt; 5">
     <ul>
-      <li [ngClass]="{ 'li--active': currentPage === 1 }">1</li>
-      <li [ngClass]="{ 'li--active': currentPage === 2 }">2</li>
-      <li [ngClass]="{ 'li--active': currentPage === 3 }">3</li>
-      <li [ngClass]="{ 'li--active': currentPage === 4 }">4</li>
+      <span class="block">
+        <li [ngClass]="{ 'li--active': currentPage === 1 }">1</li>
+        <span class="step">Step 1</span
+        ><span class="title">Your Info</span> </span
+      ><span class="block">
+        <li [ngClass]="{ 'li--active': currentPage === 2 }">2</li>
+        <span class="step">Step 2</span
+        ><span class="title">Select Plan</span> </span
+      ><span class="block">
+        <li [ngClass]="{ 'li--active': currentPage === 3 }">3</li>
+        <span class="step">Step 3</span
+        ><span class="title">Add-ons</span> </span
+      ><span class="block">
+        <li [ngClass]="{ 'li--active': currentPage === 4 }">4</li>
+        <span class="step">Step 4</span><span class="title">Summary</span>
+      </span>
     </ul>
   </aside>
 </header>

@@ -6,3 +6,34 @@
   background-image: url("/assets/images/bg-sidebar-mobile.svg");
   background-repeat: no-repeat;
 }
+
+@media only screen and (min-width: 376px) {
+  .mform {
+    background-image: none;
+    background-color: var(--white);
+    border-radius: 1em;
+
+    max-width: 940px;
+    width: 940px;
+    min-height: unset;
+    display: grid;
+    grid-template-areas:
+      "header main"
+      "header footer";
+    grid-template-columns: 316px auto;
+    grid-template-rows: auto 100px;
+    justify-content: start;
+  }
+
+  app-header {
+    grid-area: header;
+  }
+
+  app-footer {
+    grid-area: footer;
+  }
+
+  app-form-wrapper {
+    grid-area: main;
+  }
+}

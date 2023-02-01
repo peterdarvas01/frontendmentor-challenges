@@ -51,3 +51,12 @@
 body {
   background-color: var(--magnolia);
 }
+
+@media only screen and (min-width: 376px) {
+  app-multi-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}

@@ -9,3 +9,12 @@
   overflow: auto;
   max-height: calc(100vh - 110px - 4.4rem);
 }
+
+@media only screen and (min-width: 376px) {
+  .mform__main {
+    position: unset;
+    top: unset;
+    width: 100%;
+    max-height: unset;
+  }
+}

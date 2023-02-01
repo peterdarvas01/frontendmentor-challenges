@@ -39,7 +39,20 @@
   border: none;
 }
 
+.btn__secondary:hover {
+  filter: brightness(100%);
+  color: var(--marine-blue);
+  font-weight: 700;
+}
+
 .btn__important {
   color: var(--magnolia);
   background-color: var(--purplish-blue);
+}
+
+@media only screen and (min-width: 376px) {
+  .mform__footer {
+    position: unset;
+    bottom: unset;
+  }
 }
