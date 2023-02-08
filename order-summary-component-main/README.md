@@ -10,8 +10,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/peterdarvas01/frontendmentor-challenges/tree/main/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://peterdarvas01.github.io/frontendmentor-challenges/order-summary-component-main/index.html)
+- Solution URL: [github.com](https://github.com/peterdarvas01/frontendmentor-challenges/tree/main/order-summary-component-main)
+- Live Site URL: [peterdarvas01.github.io](https://peterdarvas01.github.io/frontendmentor-challenges/order-summary-component-main/index.html)
 
 ### Built with
 
